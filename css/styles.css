@@ -53,10 +53,6 @@ ul {
     list-style: square;
 }
 
-.project-name {
-    font-style: italic;
-}
-
 .small {
     font-size: .8rem;
 }
@@ -94,10 +90,28 @@ header, #projects, #education, footer {
 ------------------------------------*/
 header {
     background-color: var(--col-1);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: start;
 }
 
 footer {
     background-color: var(--col-4);
+}
+
+.profile-img {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
+    object-fit: cover;
+
+    border-radius: 150px;
+}
+
+.bio-container {
+    max-width: 1000px;
 }
 
 
@@ -111,6 +125,10 @@ footer {
 #projects {
     background-color: var(--col-3);
     /* color: var(--c-text-dark-2); */
+}
+
+.project-name {
+    font-style: italic;
 }
 
 
