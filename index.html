@@ -1,72 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Resume</title>
-</head>
-<body>
-    <!-- // Intro -->
-    <header>
-        <img src="your-picture.jpg" alt="Your Name">
-        <h1>Your Name</h1>
-        <h2>Job title or tagline</h2>
-        <p>Add your profile summary here. You can have several paragraphs or add links.</p>
-    </header>
-    
-    <main> 
-        <!-- // Work Experience -->
-        <section>
-            <h2>Work Experience</h2>
+<html lang="en" class="cousine-regular">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>Job title</h3>
-            <p>Company Name</p>
-            <p>Date at job</p>
-            
-            <!-- Add as many paragraphs as you need. -->
-            <p>Job summary.</p>
-            
-            <!-- This list can be deleted if you don't want to use it. -->
-            <p>Optional list:</p>
-            <ul>
-                <li>Created...</li>
-                <li>Lead...</li>
-                <li>Responsible for</li>
-            </ul>
-            <!-- end of Job Details block. -->
-            
-        </section>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Thomas Scott | Resume</title>
+    </head>
+    <body>
+        <!-- // Intro -->
+        <header role="heading" class="dark-bg">
+            <img src="images/dwight.jpeg" alt="Your Name">
+            <h1>Thomas Scott</h1>
+            <h2>Web Developer</h2>
+            <p>
+            Aspiring developer with 2 years of web development experience. Relevant skills include 
+            JavaScript, TypeScript, React, NextJS, ExpressJS, DrizzleORM, PostgreSQL, MongoDB, and more.
+            </p>
+        </header>
+
+        <main role="main"> 
+            <!-- Projects -->
+            <section id="projects" class="light-bg">
+                <h2>Projects</h2>
+
+                <!-- Project Details: copy this whole block to add more projects -->
+                <h3 class="project-name">Noted</h3>
+                <p>Solo Project</p>
+                <p>Date Created: Feb 2025</p>
+                <a href="https://github.com/tscott12331/noted">Link to repository</a>
+
+                <!-- Add as many paragraphs as you need. -->
+                <p>Description: Web app to create and save notes. Built using Vite, TypeScript, NextJS, and PostgreSQL.</p>
+                <p>This was my first attempt at using NextJS. In doing this project, I learned many 
+                things about the infrastructure. I learned about NextJS's server actions, middleware, 
+                app router, and much more. Overall, I feel that this project allowed me to get 
+                comfortable with the framework and understand why so many people use it.</p>
+
+                <!-- Project Details: copy this whole block to add more projects -->
+                <h3 class="project-name">Chatter</h3>
+                <p>Solo Project</p>
+                <p>Date Created: August 2025</p>
+                <a href="https://github.com/tscott12331/chatter">Link to repository</a>
+
+                <!-- Add as many paragraphs as you need. -->
+                <p>Description: Twitch chat client build using Electron, Vite, TypeScript, and React.</p>
+                <p>This project was something I was interested in doing for a while, but I 
+                just never knew how to approach it. It had always felt a bit overwhelming 
+                since I had never created a desktop app. However, after learning about 
+                Electron, I realized I could just use my web development skills to create 
+                a desktop app.</p>
+                <p>Not only did this project teach me about Electron and how it works, I 
+                also had to dive deep into the Twitch API in order to make it work. Some of the 
+                challenges this project brought were: </p>
+                <ul>
+                    <li>
+                        Properly connecting to the Twitch EventSub WebSocket server in 
+                        order to get chats from the correct channel
+                    </li>
+                    <li>
+                        Parsing messages in order to display emotes and mentions
+                    </li>
+                    <li>
+                        Adding real time text to image conversion in the message area while 
+                        typing
+                    </li>
+                </ul>
+
+                <!-- Project Details: copy this whole block to add more projects -->
+                <h3 class="project-name">ABCCommerce</h3>
+                <p>Group: Myself, Christopher Gharibian, Angel Cortes</p>
+                <p>Date Created: Fall 2024</p>
+
+                <!-- Add as many paragraphs as you need. -->
+                <p>Description: ECommerce site made with Vite, React, and .NET</p>
+                <p>As a part of my intro to sofware engineering project, the class was tasked with 
+                creating a project of our choice; our group decided on making a mock ECommerce site. 
+                The team was split into one person for the backend, and two for the frontend. I 
+                ended up on the frontend team. Since my teammate had experience with React, we 
+                decided on using that for the frontend even though I had very little experience 
+                with it at the time.</p>
+                <p>As one can image, this was a big learning experience for me. By the end of 
+                the semester, I felt much more comfortable with React than I did at the start. 
+                As a matter of fact, this is the project that made me begin using React on all 
+                of my personal web projects since it just felt so good to use.</p>
+
+                <!-- This list can be deleted if you don't want to use it. -->
+                <p>My Role</p>
+                <ul>
+                    <li>Frontend development</li>
+                    <li>Created main listing page, individual item page, and login/signup pages</li>
+                    <li>Contributed to much of the frontend documentation and project deliverables</li>
+                </ul>
+                <!-- end of Project Details block. -->
+
+            </section>
 
 
-        <!-- // Education -->
-        <section>
-            <h2>Education</h2>
+            <!-- // Education -->
+            <section id="education" class="dark-bg">
+                <h2>Education</h2>
 
-            <!-- School details: copy this whole block to add more schools. -->
-            <h3>School name, year you attended</h3>
-            <p>Designation received</p>
-            
-            <!-- Add as many paragraphs as you need. -->
-            <p>Summary.</p>
-            <!-- End of school details. -->
-        </section>
-    </main>
-    
-    <!-- // Footer & contact info -->
-    <footer>
-        <h2>Let's Keep in Touch!</h2>
-        
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <div>
-            <a href="mailto:email@example.com">email@example.com</a>
-            <a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Facebook</a>
-        </div>
+                <!-- School details: copy this whole block to add more schools. -->
+                <h3>California State Universtity, Northridge 2022-2026</h3>
+                <p class="small">Bachelor's Degree in progress</p>
 
-        <p>Copyright 2017 by Your Name</p>
-    </footer>
-</body>
+                <!-- Add as many paragraphs as you need. -->
+                <p>Actively pursuing a Bachelor's Degree in Computer Science</p>
+                <!-- End of school details. -->
+            </section>
+        </main>
+
+        <!-- // Footer & contact info -->
+        <footer class="dark-bg">
+            <h2>Let's Keep in Touch!</h2>
+
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <div>
+                <a title="Email" href="mailto:t.scott12331@gmail.com">Email</a>
+                <a title="GitHub" href="https://github.com/tscott12331" target="_blank">GitHub</a>
+                <a title="LinkedIn" href="https://www.linkedin.com/in/thomas-scott-3947a3350/" target="_blank">LinkedIn</a>
+            </div>
+
+            <p>Copyright 2025 by Thomas Scott</p>
+        </footer>
+    </body>
 </html>

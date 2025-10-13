@@ -1,26 +1,122 @@
 /* Color Palette
-# - color 1
-# - color 2
-# - color 3
-# - color 4
-*/
+# - color 1:  #320D6D
+# - color 2:  #BDBAAC
+# - color 3:  #E4E3DD
+# - color 4:  #110425
+# - color 5:  #32322C
+# - color 6:  #171612
+ */
+
+/* Font info
+ * Source Code Pro: font-weight from 200-900
+ * Cascadia Code: font-weight from 200-700
+/*
 
 /* Global styles 
 ------------------------------------*/
+:root {
+    --col-1: #320D6D;
+    --col-2: #BDBAAC;
+    --col-3: #E4E3DD;
+    --col-4: #110425;
+    --col-5: #32322C;
+    --col-6: #171612;
+
+    --c-text-light-1: var(--col-3);
+    --c-text-light-2: var(--col-2);
+
+    --c-text-dark-1: var(--col-6);
+    --c-text-dark-2: var(--col-5);
+
+    font-family: "Source Code Pro", monospace;
+}
+
 body {
-    /*background: lightblue;*/
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    font-family: "Cascadia Code", monospace;
+    color: inherit;
+}
+
+ul {
+    list-style: square;
+}
+
+.project-name {
+    font-style: italic;
+}
+
+.small {
+    font-size: .8rem;
+}
+
+.light-bg {
+    color: var(--c-text-dark-2);
+}
+
+.light-bg h1, .light-bg h2, .light-bg h3 {
+    color: var(--c-text-dark-1);
+}
+
+.light-bg a:hover {
+    filter: brightness(2);
+}
+
+.dark-bg {
+    color: var(--c-text-light-2);
+}
+
+.dark-bg h1, .dark-bg h2, .dark-bg h3 {
+    color: var(--c-text-light-1);
+}
+
+.dark-bg a:hover {
+    filter: brightness(0.8);
 }
 
 
+header, #projects, #education, footer {
+    padding: 1rem;
+}
+
 /* Header & Footer 
 ------------------------------------*/
+header {
+    background-color: var(--col-1);
+}
+
+footer {
+    background-color: var(--col-4);
+}
 
 
-
-/* Work Experience
+/* Projects 
 ------------------------------------*/
+#projects, #education {
+    font-weight: 500;
+}
 
+
+#projects {
+    background-color: var(--col-3);
+    /* color: var(--c-text-dark-2); */
+}
 
 
 /* Education
 ------------------------------------*/
+
+#education {
+    background-color: var(--col-5);
+}
